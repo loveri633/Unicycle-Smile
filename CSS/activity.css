@@ -1,0 +1,118 @@
+#activity h3 {
+    text-align: center;
+    padding: 10vh;
+}
+
+#activity div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#activity img {
+    width: 35vw;
+}
+
+#year h2 {
+    padding-top: 0;
+    padding-bottom: 40vh;
+}
+
+#year .year-pic {
+    width: 40vw;
+}
+
+.year {
+        /* display: flex; */
+        padding: 0 10vw;
+}
+
+/* .box-right {
+    position: relative;
+    width: 30vw;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -5vh;
+}
+
+.center {
+    font-size: 32px;
+    font-family: "Gen Jyuu GothicX";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .top-left {
+    position: absolute;
+    top: -3vw;
+    left: -3vw;
+    display: inline-block;
+    width: 10vw;
+    font-size: 40px;
+    font-family:  "Gen Jyuu GothicX";
+    line-height: 10vw;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .box-left {
+    position: relative;
+    width: 30vw;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -5vh;
+} */
+
+.right {
+    position: relative;
+    width: 40vw;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -16vh;
+    padding-right: 0;
+}
+
+.left {
+    position: relative;
+    width: 40vw;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -15vh;
+    padding-right: 0;
+}
+
+.size {
+    padding: 0 5vh;
+    margin-top: -5vh; 
+    width: 35vw;
+}
+
+.access {
+    padding: 0 10vw;
+}
+
+.access h2 {
+    padding-bottom: 10vh;
+}
+
+.access-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.access-wrap p {
+    font-size: 20px;
+    margin-left: 5vw;
+    width: 30vw;
+}
+
+.third {
+    margin-top: 10vh;
+}
