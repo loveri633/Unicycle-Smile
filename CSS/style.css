@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     color: #4C494B;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
 }
 
 @font-face {
@@ -186,7 +187,7 @@ nav a {
     margin-right: 0;
     margin-left: auto;
     display: flex;
-    width: 35vw;
+    width: 25vw;
 }
 
 #message h2 {
@@ -213,11 +214,22 @@ nav a {
     padding-left: 3vw;
 }
 
+.contacts {
+    margin-bottom: 20vh;
+}
+
 .people-rui {
-    margin-top: -10vh;
     margin-right: 0;
     margin-left: auto;
     display: flex;
+}
+
+.people-rui p {
+    margin-top: -5vh;
+}
+
+.people-rui img {
+    width: 20vw;
 }
 
 .all-contacts {
@@ -231,3 +243,27 @@ footer p{
     text-align: center;
     border-top: 1px solid #4C494B;
 }
+
+
+.boxRight{
+  opacity:0;/*  見えない状態  */
+  transform: translateX(-40px);
+}
+
+.fadeInRight{
+  transition: all 0.5s ease-in;
+  transform: translateX(0);/*  X軸へ40px動く  */
+  opacity: 1;/*  見える状態  */
+}
+
+
+.boxLeft{
+    opacity:0;/*  見えない状態  */
+    transform: translateX(40px);
+  }
+  
+  .fadeInLeft{
+    transition: all 0.5s ease-in;
+    transform: translateX(0);/*  X軸へ40px動く  */
+    opacity: 1;/*  見える状態  */
+  }

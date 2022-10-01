@@ -28,7 +28,7 @@
     padding: 10px;
     border: 1px solid #4C494B;
     border-radius: 30px;
-    background-color: pink;
+    background-color: #fff;
   }
   
   .slide-items p {
@@ -46,7 +46,10 @@
   
   .slick-prev:before,
   .slick-next:before {
+    border: 1px solid #4C494B;
     color: #4C494B;
+    background-color: #fff;
+    border-radius: 50%;
   }
   
   .slick-dots {
@@ -122,8 +125,11 @@
 }
 
 body {
-    background-image: url(images/unicon01.jpg);
-    }
+    /* background-color: pink; */
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+}
     
 
 .title23 {
