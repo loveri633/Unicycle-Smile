@@ -1,3 +1,10 @@
+body {
+    /* background-color: pink; */
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+}
+
 #unicon {
     padding-bottom: 20vh;
 }
@@ -56,7 +63,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
+  .title23 {
+    padding-top: 40vh;
+} 
 
 #zenkoku {
     padding-bottom: 20vh;
@@ -78,7 +88,6 @@
 .people-natsume {
     height: 30vw;
 }
-
 
 #hapyo {
     padding-bottom: 20vh;
@@ -124,14 +133,49 @@
     padding-bottom: 10vh;
 }
 
-body {
-    /* background-color: pink; */
-    background-image: url("../images/background.png");
-    background-position: center;
-    background-size: cover;
-}
-    
-
-.title23 {
-    padding-top: 40vh;
+@media all and (max-width:480px) {
+    body {
+        background-image: url("../images/background2.png");
+    }
+    .title23 {
+        font-size: 24px;
+        padding: 0;
+        margin-top: 150px;
+        margin-bottom: 70px;
+    }
+    #unicon, #zenkoku, #hapyo {
+        padding-bottom: 15vh;
+    }
+    #media, #event {
+        padding-bottom: 10vh;
+    }
+    .unicon, .zenkoku, .hapyo{
+        padding: 0;
+        margin: 0 5vw;
+    }
+    #unicon .about-text-left {
+        width: 45vw;
+    }
+    #unicon .people-right {
+        margin-left: 30vw;
+        margin-top: 0;
+        margin-top: 5vh;
+    }
+    #zenkoku .people-left {
+        margin-left: 0;
+        margin-right: 20vw;
+        margin-top: 5vh;
+    }
+    .slide-items p {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    #hapyo .people-right {
+        margin-left: 25vw;
+        margin-top: 5vh;
+    }
+    #media h3, #event h3 {
+        padding-bottom: 5vh;
+    }
 }

@@ -6,6 +6,11 @@ $(function($) {
         loop: true
     });
 
+    $(".burger").click(function () {
+      $(".burger").toggleClass("is-active");
+      $(".menu").toggleClass("is-active");
+    });
+
 //.boxRight要素が画面に入った時〜
 $(".boxRight").on("inview", function (event, isInView) {
     //その.boxRightにクラスfadeInRight追加
@@ -32,6 +37,14 @@ $(".slide-items").slick({
     slidesToShow:3,
     infinite:true,
     slidesToScroll:1,
+    responsive:[
+      {
+          breakpoint: 480,
+          settings:{
+              slidesToShow:1,
+          }
+      }],
+      respondTo: 'slider'
   });
 });
 

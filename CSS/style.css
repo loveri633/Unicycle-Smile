@@ -46,6 +46,22 @@ p {
     font-family: "Gen Jyuu GothicX";
 }
 
+@media all and (max-width:480px) {
+    h2 {
+        font-size: 24px;
+        padding: 80px 0;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .bg-switcher h1 {
+        font-size: 32px;
+    }
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -81,7 +97,20 @@ nav a {
     font-size: 16px;
 } 
 
-.about {
+@media all and (max-width:480px) {
+    nav {
+        padding: 10px 3%;
+    }
+    nav ul, li a {
+        display: none;
+    }
+}
+
+
+
+
+
+.about, .about-rev{
     display: flex;
     width: 90vw;
     margin: 0 5vw;
@@ -120,6 +149,59 @@ nav a {
 .about-img01, .about-img02, .about-img03 {
     width: 40vw;
     margin-top: -5vh; 
+}
+
+.about-img01-sp {
+    display: none;
+}
+.about-img-sp {
+    display: none;
+}
+
+@media all and (max-width:480px) {
+    .about {
+        display: block;
+    }
+    .about-rev {
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    .about br, .about-rev br {
+        display: none;
+    }
+    .about-img {
+        display: none;
+    }
+    .about-img-sp {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-text-right {
+        width: 90%;
+    }
+    .about-text-left {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .about h3, .about-rev h3 {
+        margin: 50px 0 40px 0;
+    }
+    .button {
+        font-size: 16px;
+        width: 130px;
+        line-height: 32px;
+    }
+    .about-img01, .about-img02, .about-img03 {
+        display: none; 
+    }
+    .about-img01-sp {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
 }
 
 #event h2 {
@@ -164,6 +246,35 @@ nav a {
     width: 35vw;
 }
 
+@media all and (max-width:480px) {
+    #event h2 {
+        margin: 110px 0 30px 5vw;
+        padding: 0;
+    }
+    .event {
+        display: block;
+        padding: 0;
+    }
+    .button2 {
+        font-size: 16px;
+        width: 160px;
+        line-height: 32px;
+    }
+    .people-right {
+        margin-top: -5vh;
+        margin-left: 60vw;
+    }
+    .tate {
+        font-size: 1px;
+    }
+    .rect {
+        margin-top: -10vh;
+        margin-left: 5vw;
+        padding: 0;
+        width: 35vw;
+    }
+}
+
 #activity h2 {
     text-align: right;
     padding: 0 20vh 20vh 20vh;
@@ -190,6 +301,38 @@ nav a {
     width: 25vw;
 }
 
+.rect2-sp {
+    display: none;
+}
+
+@media all and (max-width:480px) {
+    #activity h2 {
+        text-align: right;
+        padding: 0;
+        margin: 40px 5vw 30px 0;
+    }
+    .activity {
+        padding: 0;
+        margin-right: 3vw;
+    }
+    .people-left {
+        margin-top: 0;
+        margin-left: 5vw;
+        margin-right: 10vw;
+        display: flex;
+    }
+    .rect2 {
+        display: none;
+    }
+    .rect2-sp {
+        display: block;
+        margin-right: 5vw;
+        margin-left: auto;
+        display: flex;
+        width: 25vw;
+    }
+}
+
 #message h2 {
     text-align: left;
     padding: 0px 20vh 20vh;
@@ -202,6 +345,21 @@ nav a {
 #message img {
     width: 80vw;
     padding: 10vh 0 0 0;
+}
+
+@media all and (max-width:480px) {
+    #message h2 {
+        padding: 0;
+        margin: 40px 0 30px 5vw;
+    }
+    .message {
+        padding: 0 5vw;
+    }
+    #message img {
+        width: 90vw;
+        padding: 0;
+        margin-top: 3vh;
+    }
 }
 
 .contact {
@@ -237,11 +395,37 @@ nav a {
    padding: 0 10vw;
 }
 
+@media all and (max-width:480px) {
+    .contact {
+        padding-bottom: 2vh;
+    }
+    .all-contacts {
+        padding: 0;
+        margin: 0 5vw;
+    }
+    #contact img{
+        width: 30px;
+    }
+    #contact .people {
+        width: 20vw;
+    }
+    .people-rui p {
+        margin-top: 0;
+    }
+}
+
 footer p{
     font-size: 20px;
     padding: 3vh;
     text-align: center;
     border-top: 1px solid #4C494B;
+}
+
+@media all and (max-width:480px) {
+    footer p{
+        font-size: 10px;
+        padding: 1vh;
+    }
 }
 
 

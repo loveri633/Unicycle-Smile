@@ -1,3 +1,7 @@
+.title23 {
+    padding-top: 40vh;
+}
+
 #activity h3 {
     text-align: center;
     padding: 10vh;
@@ -9,6 +13,12 @@
 }
 
 #activity img {
+    width: 35vw;
+}
+
+.size {
+    padding: 0 5vh;
+    margin-top: -5vh; 
     width: 35vw;
 }
 
@@ -24,6 +34,10 @@
 .year {
         /* display: flex; */
         padding: 0 10vw;
+}
+
+.year-wrapper {
+    text-align: center;
 }
 
 /* .box-right {
@@ -87,12 +101,6 @@
     padding-right: 0;
 }
 
-.size {
-    padding: 0 5vh;
-    margin-top: -5vh; 
-    width: 35vw;
-}
-
 .access {
     padding: 0 10vw;
 }
@@ -117,10 +125,82 @@
     margin-top: 10vh;
 }
 
-.title23 {
-    padding-top: 40vh;
-}
+@media all and (max-width:480px) {
+    .title23 {
+        font-size: 24px;
+        padding: 0;
+        margin-top: 150px;
+        margin-bottom: 70px;
+    }
+    #activity h3 {
+        padding: 0;
+        margin: 60px;
+    }
+    #activity img {
+        width: 80vw;
+    }
+    #year h2 {
+        padding: 70px 0;
+    }
+    .size {
+        padding: 0;
+        margin-top: 70px; 
+        width: 35vw;
+    }
 
-.year-wrapper {
-    text-align: center;
+    /* 多分ココアとで100にする */
+    #year .year-pic {
+        width: 500px;
+    }
+    
+    .year, .access {
+        padding: 0;
+        margin: 0 5vw;
+    }
+
+    .right {
+        width: 90vw;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+        padding-right: 0;
+    }
+    
+    .left {
+        width: 90vw;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        padding-right: 0;
+    }
+
+    .access {
+        text-align: center;
+    }
+    
+    .access h2 {
+        
+        padding-bottom: 0;
+    }
+    
+    .access-wrap {
+        display: block;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    
+    .access-wrap p {
+        font-size: 10px;
+        margin-left: 5vw;
+        width: 90vw;
+        text-align: left;
+    }
+
+   .rect2 {
+        display: block;
+        padding: 0;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: 5vw;
+    }
 }
