@@ -70,8 +70,11 @@ nav {
     position: absolute;
     top: 0;
     width: 100%;
+    height: 70px;
     background-color: #fff;
     border-bottom: 1px solid #4C494B;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -97,6 +100,10 @@ nav a {
     font-size: 16px;
 } 
 
+.menu, .burger {
+    display: none;
+}
+
 @media all and (max-width:480px) {
     nav {
         padding: 10px 3%;
@@ -104,6 +111,61 @@ nav a {
     nav ul, li a {
         display: none;
     }
+
+    /* バーガー */
+.burger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/burger.svg);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 0 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  .burger.is-active {
+    background-image: url(../images/close.svg);
+  }
+
+  /* メニュー */
+
+  .menu ul, .menu li, .menu a {
+    display: block;
+  }
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(../images/background3.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+  
+  .menu.is-active {
+    display: flex;
+  }
+  .menu_list li {
+    text-align: center;
+    padding: 40px;
+  }
+  .menu_list a {
+    color: #4C494B;
+  }
+
+  .aaa.is-active {
+    display: none;
+  }
 }
 
 .about, .about-rev{
@@ -283,9 +345,11 @@ nav a {
 }
 
 @media all and (max-width:480px) {
+
     #event h2 {
-        margin: 110px 0 30px 5vw;
-        padding: 0;
+        margin: 0 0 30px 5vw;
+        padding-top: 110px;
+        padding-bottom: 0;
     }
     .event {
         display: block;
@@ -345,7 +409,9 @@ nav a {
     #activity h2 {
         text-align: right;
         padding: 0;
-        margin: 40px 5vw 30px 0;
+        margin: 0 5vw 30px 0;
+        padding-top: 110px;
+        padding-bottom: 0;
     }
     .activity {
         padding: 0;
@@ -366,6 +432,9 @@ nav a {
         margin-left: auto;
         display: flex;
         width: 25vw;
+    }
+    #activity .about-text-right {
+        margin-right: 5vw;
     }
 }
 

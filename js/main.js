@@ -7,9 +7,14 @@ $(function($) {
     });
 
     $(".burger").click(function () {
-      $(".burger").toggleClass("is-active");
-      $(".menu").toggleClass("is-active");
+        $(".burger").toggleClass("is-active");
+        $(".menu").toggleClass("is-active");
+      });
+      $(".move").click(function () {
+        $(".burger").toggleClass("is-active");
+        $(".menu").toggleClass("is-active");
     });
+
 
 //.boxRight要素が画面に入った時〜
 $(".boxRight").on("inview", function (event, isInView) {
