@@ -255,4 +255,69 @@
     #year .rect2{
         padding: 0;
     }
+
+
+
+
+    nav {
+        padding: 10px 3%;
+    }
+    nav ul, li a {
+        display: none;
+    }
+
+    /* バーガー */
+.burger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/burger.svg);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 0 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  .burger.is-active {
+    background-image: url(../images/close.svg);
+  }
+
+  /* メニュー */
+
+  .menu ul, .menu li, .menu a {
+    display: block;
+  }
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(../images/background3.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+  
+  .menu.is-active {
+    display: flex;
+  }
+  .menu_list li {
+    text-align: center;
+    padding: 40px;
+  }
+  .menu_list a {
+    color: #4C494B;
+  }
+
+  .aaa.is-active {
+    display: none;
+  }
 }
