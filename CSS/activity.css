@@ -7,13 +7,24 @@
     padding: 10vh;
 }
 
-#activity div {
+/* #activity div {
     text-align: center;
     margin: 0 auto;
-}
+} */
 
-#activity img {
+/* #activity img {
     width: 35vw;
+} */
+
+.practice {
+    display: flex;
+    margin: 0 5vw;
+    width: 615px;
+    margin: 0 auto;
+}
+.practice p {
+    margin-left: 20px;
+    font-size: 32px;
 }
 
 .size {
@@ -149,8 +160,15 @@
         padding: 0;
         margin: 60px;
     }
-    #activity img {
+    /* #activity img {
         width: 80vw;
+    } */
+    .practice {
+        width: 320px;
+    }
+    .practice p {
+        margin-left: 13px;
+        font-size: 16px;
     }
     #year h2 {
         padding: 70px 0;
